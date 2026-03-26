@@ -1,29 +1,19 @@
-const data = [
-{
-nama:"Andi",
-rating:"⭐⭐⭐⭐⭐",
-pesan:"Cepat banget pengerjaannya"
-},
-{
-nama:"Rina",
-rating:"⭐⭐⭐⭐⭐",
-pesan:"Trusted, unit selesai semua"
-},
-{
-nama:"Dika",
-rating:"⭐⭐⭐⭐",
-pesan:"Harga murah dan cepat"
-}
-]
+fetch("LINK_API_SHEET")
+.then(res => res.json())
+.then(data => {
 
-let container = document.getElementById("testimoni-container")
+let container = document.getElementById("testimoni")
 
-data.forEach(t=>{
+data.forEach(item => {
+
 container.innerHTML += `
-<div class="testi">
-<h4>${t.nama}</h4>
-<p>${t.rating}</p>
-<p>${t.pesan}</p>
+<div class="card">
+<p class="rating">${item.Rating}</p>
+<p>${item.Testimoni}</p>
+<span>${item.Nama}</span>
 </div>
 `
+
+})
+
 })
