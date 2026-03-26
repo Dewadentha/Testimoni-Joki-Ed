@@ -2,58 +2,89 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Testimoni Joki ED</title>
+<title>Jasa Joki ED</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>Jasa Joki ED (English Discoveries)</h1>
-<p>Testimoni Pelanggan</p>
+<h1>Jasa Joki ED</h1>
+<p>English Discoveries</p>
 </header>
 
-<section class="info">
-<h2>Terima kasih sudah menggunakan jasa saya 🙏</h2>
-<p>
-Website ini dibuat untuk pelanggan yang sudah menggunakan jasa joki ED.
-Silakan berikan kritik, saran, atau testimoni agar layanan bisa lebih baik.
-</p>
+<section class="harga">
 
-<a href="https://forms.gle/rgGDgyxeR5gytUud8" class="btn">Isi Testimoni</a>
-</section>
+<h2>Harga</h2>
 
-<section class="price">
-<h2>Harga Jasa</h2>
+<div class="card">
+<h3>Basic</h3>
+<p>3K / unit</p>
+<p>Paket 10 Unit : 25K</p>
+</div>
 
-<ul>
-<li>Basic : 3K / unit</li>
-<li>Intermediate : 4K / unit</li>
-<li>Advance : 5K / unit</li>
-</ul>
+<div class="card">
+<h3>Intermediate</h3>
+<p>4K / unit</p>
+<p>Paket 10 Unit : 35K</p>
+</div>
 
-<h3>Paket Hemat</h3>
-
-<ul>
-<li>Basic 10 Unit : 25K</li>
-<li>Intermediate 10 Unit : 35K</li>
-<li>Advance 10 Unit : 45K</li>
-</ul>
+<div class="card">
+<h3>Advance</h3>
+<p>5K / unit</p>
+<p>Paket 10 Unit : 45K</p>
+</div>
 
 </section>
 
-<section class="review">
+<section>
+
 <h2>Testimoni Pelanggan</h2>
 
-<p>
-Klik tombol di atas untuk melihat atau menambahkan testimoni.
-</p>
+<div id="testimoni-container">
+Loading testimoni...
+</div>
 
 </section>
+
+<section class="form">
+
+<h2>Beri Testimoni</h2>
+
+<form id="form">
+<input type="text" placeholder="Nama" required>
+
+<select required>
+<option>Basic</option>
+<option>Intermediate</option>
+<option>Advance</option>
+</select>
+
+<select required>
+<option value="5">⭐⭐⭐⭐⭐</option>
+<option value="4">⭐⭐⭐⭐</option>
+<option value="3">⭐⭐⭐</option>
+<option value="2">⭐⭐</option>
+<option value="1">⭐</option>
+</select>
+
+<textarea placeholder="Testimoni / Kritik / Saran"></textarea>
+
+<button type="submit">Kirim</button>
+
+</form>
+
+</section>
+
+<a class="wa" href="https://wa.me/628XXXXXXXXXX">
+Order via WhatsApp
+</a>
 
 <footer>
 <p>© 2026 Jasa Joki ED</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
