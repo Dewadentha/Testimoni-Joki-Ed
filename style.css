@@ -1,83 +1,91 @@
 body{
-font-family:Arial;
-background:#f4f6f8;
+
+font-family: Arial;
 margin:0;
-text-align:center;
+background:#f1f5f9;
+
 }
 
 header{
-background:#1f2937;
+
+background:#0b5ed7;
 color:white;
-padding:30px;
+padding:25px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
 }
 
-.harga{
-display:flex;
-justify-content:center;
+.header-content h1{
+
+margin:0;
+
+}
+
+.order-btn{
+
+background:#25D366;
+padding:10px 18px;
+border-radius:6px;
+color:white;
+text-decoration:none;
+
+}
+
+section{
+
+padding:40px;
+
+}
+
+.intro{
+
+background:white;
+
+}
+
+.btn{
+
+display:inline-block;
+background:#0b5ed7;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+text-decoration:none;
+
+}
+
+#testimoni{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-flex-wrap:wrap;
+
+margin-top:20px;
+
 }
 
 .card{
+
 background:white;
 padding:20px;
-border-radius:10px;
-width:200px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
-}
-
-#testimoni-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
-margin:20px;
-}
-
-.testi{
-background:white;
-padding:15px;
-width:220px;
 border-radius:8px;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+
 }
 
-form{
-display:flex;
-flex-direction:column;
-gap:10px;
-max-width:300px;
-margin:auto;
-}
+.rating{
 
-input,select,textarea{
-padding:10px;
-border-radius:5px;
-border:1px solid #ccc;
-}
+color:#f59e0b;
 
-button{
-padding:10px;
-background:#2563eb;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
-}
-
-.wa{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50px;
-text-decoration:none;
 }
 
 footer{
-margin-top:30px;
+
+background:#e2e8f0;
 padding:15px;
-background:#ddd;
+text-align:center;
+
 }
