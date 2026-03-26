@@ -10,17 +10,19 @@ let container = document.getElementById("testimoni-container");
 
 container.innerHTML = "";
 
-data.forEach(item => {
+data.reverse().forEach(item => {
 
 container.innerHTML += `
 
 <div class="card">
 
-<p class="rating">${item.Rating}</p>
+<h3>${item.Nama || "Anonim"}</h3>
 
-<p>${item.Testimoni}</p>
+<p><b>Level ED:</b> ${item["Level ED"]}</p>
 
-<span>${item.Nama}</span>
+<p><b>Unit yang dijoki:</b> ${item["Berapa unit yang yang kamu joki"]}</p>
+
+<p class="komen">"${item["Adakah Kritik / Saran yang mau kamu berikan?"]}"</p>
 
 </div>
 
