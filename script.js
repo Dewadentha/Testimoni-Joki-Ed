@@ -1,4 +1,4 @@
-fetch("LINK_API_SHEET")
+fetch("https://api.sheetbest.com/sheets/1ec1ec4c-ed02-4c9c-b2f5-1aa26bae9b95")
 .then(res => res.json())
 .then(data => {
 
